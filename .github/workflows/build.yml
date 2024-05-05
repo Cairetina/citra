@@ -1,11 +1,8 @@
 name: citra-build
 
 on:
-  push:
-    branches: [ "*" ]
-    tags: [ "*" ]
-  pull_request:
-    branches: [ master ]
+  watch:
+    types: started
 
 jobs:
   source:
