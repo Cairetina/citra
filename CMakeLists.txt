@@ -9,8 +9,8 @@ cmake_policy(SET CMP0069 NEW)
 # Set the default so subdirectory cmake_minimum_required calls won't unset the policy.
 cmake_policy(SET CMP0063 NEW)
 set(CMAKE_POLICY_DEFAULT_CMP0063 NEW)
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -march=znver2 -Ofast -flto=thin")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=znver2 -Ofast -flto=thin")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -march=znver2 -Ofast -flto")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=znver2 -Ofast -flto")
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/CMakeModules")
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/externals/cmake-modules")
